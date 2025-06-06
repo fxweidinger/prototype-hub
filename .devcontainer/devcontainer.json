@@ -1,0 +1,20 @@
+{
+  "name": "prototype-hub-devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  },
+  "postCreateCommand": "pip install --upgrade pip && pip install -r infrastructure/dataspace-components/consumer/requirements.txt -r infrastructure/dataspace-components/provider/requirements.txt",
+  "remoteUser": "vscode"
+}

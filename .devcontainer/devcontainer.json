@@ -15,6 +15,9 @@
       ]
     }
   },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
   "postCreateCommand": "pip install --upgrade pip && pip install -r infrastructure/dataspace-components/consumer/requirements.txt -r infrastructure/dataspace-components/provider/requirements.txt",
   "remoteUser": "vscode"
 }

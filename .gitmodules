@@ -1,0 +1,3 @@
+[submodule "knowledge-agents-aas-bridge"]
+	path = knowledge-agents-aas-bridge
+	url = https://github.com/fxweidinger/knowledge-agents-aas-bridge
